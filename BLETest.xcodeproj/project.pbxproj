@@ -7,17 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		277595F3203864FE00146CA5 /* ReceiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277595F2203864FE00146CA5 /* ReceiveViewController.swift */; };
+		277595F52038651A00146CA5 /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277595F42038651A00146CA5 /* SendViewController.swift */; };
+		277595F72038713F00146CA5 /* ReceiveObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277595F62038713F00146CA5 /* ReceiveObject.swift */; };
+		277595FE203882AE00146CA5 /* MainIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 277595FD203882AE00146CA5 /* MainIcon.png */; };
+		2775960020388A6400146CA5 /* Icons.pptx in Resources */ = {isa = PBXBuildFile; fileRef = 277595FF20388A6400146CA5 /* Icons.pptx */; };
+		277596032038932200146CA5 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277596022038932200146CA5 /* Device.swift */; };
 		277F08291FA72562001333D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F08281FA72562001333D2 /* AppDelegate.swift */; };
-		277F082B1FA72562001333D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F082A1FA72562001333D2 /* ViewController.swift */; };
 		277F082E1FA72562001333D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277F082C1FA72562001333D2 /* Main.storyboard */; };
 		277F08301FA72562001333D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277F082F1FA72562001333D2 /* Assets.xcassets */; };
 		277F08331FA72562001333D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277F08311FA72562001333D2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		277595F2203864FE00146CA5 /* ReceiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveViewController.swift; sourceTree = "<group>"; };
+		277595F42038651A00146CA5 /* SendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
+		277595F62038713F00146CA5 /* ReceiveObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveObject.swift; sourceTree = "<group>"; };
+		277595FD203882AE00146CA5 /* MainIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainIcon.png; sourceTree = "<group>"; };
+		277595FF20388A6400146CA5 /* Icons.pptx */ = {isa = PBXFileReference; lastKnownFileType = file; path = Icons.pptx; sourceTree = "<group>"; };
+		277596022038932200146CA5 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		277F08251FA72562001333D2 /* BLETest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLETest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		277F08281FA72562001333D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		277F082A1FA72562001333D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		277F082D1FA72562001333D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		277F082F1FA72562001333D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		277F08321FA72562001333D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +45,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		277595FA2038823400146CA5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				277595FF20388A6400146CA5 /* Icons.pptx */,
+				277595FD203882AE00146CA5 /* MainIcon.png */,
+				277F082F1FA72562001333D2 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		277596012038930E00146CA5 /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				277596022038932200146CA5 /* Device.swift */,
+			);
+			path = BLE;
+			sourceTree = "<group>";
+		};
 		277F081C1FA72562001333D2 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +82,15 @@
 		277F08271FA72562001333D2 /* BLETest */ = {
 			isa = PBXGroup;
 			children = (
+				277596012038930E00146CA5 /* BLE */,
+				277595FA2038823400146CA5 /* Assets */,
 				277F08281FA72562001333D2 /* AppDelegate.swift */,
-				277F082A1FA72562001333D2 /* ViewController.swift */,
 				277F082C1FA72562001333D2 /* Main.storyboard */,
-				277F082F1FA72562001333D2 /* Assets.xcassets */,
 				277F08311FA72562001333D2 /* LaunchScreen.storyboard */,
 				277F08341FA72562001333D2 /* Info.plist */,
+				277595F2203864FE00146CA5 /* ReceiveViewController.swift */,
+				277595F42038651A00146CA5 /* SendViewController.swift */,
+				277595F62038713F00146CA5 /* ReceiveObject.swift */,
 			);
 			path = BLETest;
 			sourceTree = "<group>";
@@ -97,6 +128,11 @@
 					277F08241FA72562001333D2 = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -124,7 +160,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				277F08331FA72562001333D2 /* LaunchScreen.storyboard in Resources */,
+				277595FE203882AE00146CA5 /* MainIcon.png in Resources */,
 				277F08301FA72562001333D2 /* Assets.xcassets in Resources */,
+				2775960020388A6400146CA5 /* Icons.pptx in Resources */,
 				277F082E1FA72562001333D2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,8 +174,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				277F082B1FA72562001333D2 /* ViewController.swift in Sources */,
+				277595F72038713F00146CA5 /* ReceiveObject.swift in Sources */,
+				277595F52038651A00146CA5 /* SendViewController.swift in Sources */,
+				277595F3203864FE00146CA5 /* ReceiveViewController.swift in Sources */,
 				277F08291FA72562001333D2 /* AppDelegate.swift in Sources */,
+				277596032038932200146CA5 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -262,7 +303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

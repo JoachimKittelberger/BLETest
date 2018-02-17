@@ -1,0 +1,32 @@
+//
+//  Device.swift
+//  BLETest
+//
+//  Created by Joachim Kittelberger on 17.02.18.
+//  Copyright © 2018 Joachim Kittelberger. All rights reserved.
+//
+
+import Foundation
+
+
+struct Device {
+    
+    // UUIDs
+    // Apple Service: "E20A39F4-73F5-4BC4-A12F-17D1AD07A961"
+    // Apple Characteristic: "08590F7E-DB05-467E-8757-72F6FAEB13D4"
+    static let TransferService = "E71EE188-279F-4ED6-8055-12D77BFD900C"
+    static let TransferCharacteristic = "2F016955-E675-49A6-9176-111E2A1CF333"
+    
+    // Tags
+    static let EOM = "{{{EOM}}}"
+    
+    // We have a 20-byte limit for data transfer
+    static let notifyMTU = 20
+    
+//    static let centralRestoreIdentifier = "io.cloudcity.BLEConnect.CentralManager"
+//    static let peripheralRestoreIdentifier = "io.cloudcity.BLEConnect.PeripheralManager"
+
+    static let centralRestoreIdentifier = "de.kibesoft.WhoAmI.CentralManager"
+    static let peripheralRestoreIdentifier = "de.kibesoft.WhoAmI.PeripheralManager"
+
+}
