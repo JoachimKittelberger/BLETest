@@ -10,9 +10,9 @@
 		277595F3203864FE00146CA5 /* ReceiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277595F2203864FE00146CA5 /* ReceiveViewController.swift */; };
 		277595F52038651A00146CA5 /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277595F42038651A00146CA5 /* SendViewController.swift */; };
 		277595F72038713F00146CA5 /* ReceiveObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277595F62038713F00146CA5 /* ReceiveObject.swift */; };
-		277595FE203882AE00146CA5 /* MainIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 277595FD203882AE00146CA5 /* MainIcon.png */; };
 		2775960020388A6400146CA5 /* Icons.pptx in Resources */ = {isa = PBXBuildFile; fileRef = 277595FF20388A6400146CA5 /* Icons.pptx */; };
 		277596032038932200146CA5 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277596022038932200146CA5 /* Device.swift */; };
+		27759605203DB83800146CA5 /* WhoAmIIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 27759604203DB83800146CA5 /* WhoAmIIcon.png */; };
 		277F08291FA72562001333D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F08281FA72562001333D2 /* AppDelegate.swift */; };
 		277F082E1FA72562001333D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277F082C1FA72562001333D2 /* Main.storyboard */; };
 		277F08301FA72562001333D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277F082F1FA72562001333D2 /* Assets.xcassets */; };
@@ -23,9 +23,9 @@
 		277595F2203864FE00146CA5 /* ReceiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveViewController.swift; sourceTree = "<group>"; };
 		277595F42038651A00146CA5 /* SendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
 		277595F62038713F00146CA5 /* ReceiveObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveObject.swift; sourceTree = "<group>"; };
-		277595FD203882AE00146CA5 /* MainIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainIcon.png; sourceTree = "<group>"; };
 		277595FF20388A6400146CA5 /* Icons.pptx */ = {isa = PBXFileReference; lastKnownFileType = file; path = Icons.pptx; sourceTree = "<group>"; };
 		277596022038932200146CA5 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		27759604203DB83800146CA5 /* WhoAmIIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhoAmIIcon.png; sourceTree = "<group>"; };
 		277F08251FA72562001333D2 /* BLETest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLETest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		277F08281FA72562001333D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		277F082D1FA72562001333D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,8 +48,8 @@
 		277595FA2038823400146CA5 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				27759604203DB83800146CA5 /* WhoAmIIcon.png */,
 				277595FF20388A6400146CA5 /* Icons.pptx */,
-				277595FD203882AE00146CA5 /* MainIcon.png */,
 				277F082F1FA72562001333D2 /* Assets.xcassets */,
 			);
 			path = Assets;
@@ -160,8 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				277F08331FA72562001333D2 /* LaunchScreen.storyboard in Resources */,
-				277595FE203882AE00146CA5 /* MainIcon.png in Resources */,
 				277F08301FA72562001333D2 /* Assets.xcassets in Resources */,
+				27759605203DB83800146CA5 /* WhoAmIIcon.png in Resources */,
 				2775960020388A6400146CA5 /* Icons.pptx in Resources */,
 				277F082E1FA72562001333D2 /* Main.storyboard in Resources */,
 			);
