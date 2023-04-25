@@ -17,6 +17,8 @@
 		277F082E1FA72562001333D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277F082C1FA72562001333D2 /* Main.storyboard */; };
 		277F08301FA72562001333D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277F082F1FA72562001333D2 /* Assets.xcassets */; };
 		277F08331FA72562001333D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277F08311FA72562001333D2 /* LaunchScreen.storyboard */; };
+		27E4255E2142E910002D6C5F /* CloudKitAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E4255D2142E910002D6C5F /* CloudKitAccess.swift */; };
+		27E425622142EA02002D6C5F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E425612142EA02002D6C5F /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,9 @@
 		277F082F1FA72562001333D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		277F08321FA72562001333D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		277F08341FA72562001333D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27E4255D2142E910002D6C5F /* CloudKitAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitAccess.swift; sourceTree = "<group>"; };
+		27E4255F2142E9FF002D6C5F /* BLETest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BLETest.entitlements; sourceTree = "<group>"; };
+		27E425612142EA02002D6C5F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27E425622142EA02002D6C5F /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +74,7 @@
 			children = (
 				277F08271FA72562001333D2 /* BLETest */,
 				277F08261FA72562001333D2 /* Products */,
+				27E425602142EA02002D6C5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +89,7 @@
 		277F08271FA72562001333D2 /* BLETest */ = {
 			isa = PBXGroup;
 			children = (
+				27E4255F2142E9FF002D6C5F /* BLETest.entitlements */,
 				277596012038930E00146CA5 /* BLE */,
 				277595FA2038823400146CA5 /* Assets */,
 				277F08281FA72562001333D2 /* AppDelegate.swift */,
@@ -91,8 +99,17 @@
 				277595F2203864FE00146CA5 /* ReceiveViewController.swift */,
 				277595F42038651A00146CA5 /* SendViewController.swift */,
 				277595F62038713F00146CA5 /* ReceiveObject.swift */,
+				27E4255D2142E910002D6C5F /* CloudKitAccess.swift */,
 			);
 			path = BLETest;
+			sourceTree = "<group>";
+		};
+		27E425602142EA02002D6C5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27E425612142EA02002D6C5F /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +147,12 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
 								enabled = 1;
 							};
 						};
@@ -178,6 +201,7 @@
 				277595F52038651A00146CA5 /* SendViewController.swift in Sources */,
 				277595F3203864FE00146CA5 /* ReceiveViewController.swift in Sources */,
 				277F08291FA72562001333D2 /* AppDelegate.swift in Sources */,
+				27E4255E2142E910002D6C5F /* CloudKitAccess.swift in Sources */,
 				277596032038932200146CA5 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +339,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BLETest/BLETest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FNGMABF4M4;
 				INFOPLIST_FILE = BLETest/Info.plist;
@@ -330,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BLETest/BLETest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FNGMABF4M4;
 				INFOPLIST_FILE = BLETest/Info.plist;
